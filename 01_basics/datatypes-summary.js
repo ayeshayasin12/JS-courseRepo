@@ -26,7 +26,7 @@ const heroes= ["Ironman", "Spiderman", "Thor"];
 const myObj= {
     name:"Ayesha",
     age:19,
-    email: ayeshayasiin72gmail.com,
+    email: "ayeshayasiin7@gmail.com",
 }
 
 const myFunction= function(){
@@ -40,3 +40,32 @@ console.log(typeof bigNumber); //bigint
 console.log(typeof heroes); //object
 console.log(typeof myObj); //object
 console.log(typeof myFunction); //function
+
+
+// Stack(Primitive) vs Heap(Non-Primitive)
+
+//Stack(refers and make changes in copy therefore original remains same)
+
+let myYotubename= "Ayesha Yasiin";
+
+anothername= myYotubename;
+anothername= "Ayesha Qamar";
+
+console.log(myYotubename); //Ayesha Yasiin
+console.log(anothername); //Ayesha Qamar
+
+//Heap(refers and make changes in original therefore original also changes)
+
+let userOne={
+    email: "ayeshayasiin@gmail.com",
+    age: 19,
+}
+
+let userTwo =userOne;
+
+userTwo.email= "ayeshaqamar@gmail.com";
+
+console.log(userOne.email); //ayeshaqamar@gmail.com
+console.log(userTwo.email); //ayeshaqamar@gmail.com
+
+
