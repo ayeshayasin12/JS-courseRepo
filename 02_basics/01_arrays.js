@@ -37,5 +37,32 @@ console.log(myn1); //2,3
 
 console.log("B", myArr);
 const myn2= myArr.splice(2,4);
-console.log(myArr); //0,1,5
+console.log(myArr); //0,1,
 console.log(myn2); //2,3,4,5
+
+const marvel_heroes= ["thor","Ironman","spiderman"];
+const dc= ["batman","superman","flash"];
+
+const all_heroes= marvel_heroes.concat(dc);
+console.log(all_heroes); //["thor","Ironman","spiderman","batman","superman","flash"]
+
+marvel_heroes.push(dc);
+console.log(marvel_heroes); //["thor","Ironman","spiderman",["batman","superman","flash"]]
+console.log(marvel_heroes[3][1]); //superman
+console.log(marvel_heroes[3][2]); //flash
+
+const all_heroes2= [...marvel_heroes,...dc];
+console.log(all_heroes2); //["thor","Ironman","spiderman","batman","superman","flash"]
+
+const another_array= [1,2,3,4,[5,6],7,[8,9]];
+console.log(another_array.flat(Infinity)); //[1,2,3,4,5,6,7,8,9]
+
+console.log(Array.isArray("Hitesh"));
+console.log(Array.from("Hitesh"));
+console.log(Array.from({name: "hitesh"})); //[]
+
+const score1= 100;
+const score2= 200;
+const score3= 300;
+
+console.log(Array.of(score1,score2,score3)); 
