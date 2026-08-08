@@ -1,0 +1,22 @@
+const course={
+    courseName:  "JS",
+    price: "999",
+    courseInstructor: "Hitesh",
+}
+
+// course.courseInstructor   repititive thats we destructuring was introduced
+
+// const{courseInstructor}= course
+
+// console.log(courseInstructor);
+
+const{courseInstructor: instructor}= course;
+console.log(instructor);
+
+// {
+//     "name": "Ayesha",
+//     "age": "19",
+//     "courseName" : "js"
+
+// }
+
