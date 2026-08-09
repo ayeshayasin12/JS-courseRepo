@@ -10,4 +10,22 @@ if(true){
 // console.log(a);   //undefined
 // console.log(b);   //undefined
 console.log(c);   //200
-console.log(a);
+// console.log(a);
+
+//
+
+console.log(addone(6)); //7
+
+function addone(num){
+    return num+1;
+}
+
+console.log(addone(5)); //6
+
+// console.log(addTwo(5));  //error since called before initialization
+
+const addTwo= function(num){
+    return num+2;
+}
+
+console.log(addTwo(5));
