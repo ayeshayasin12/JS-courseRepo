@@ -1,0 +1,16 @@
+//named IIFE
+
+(function showConnection(){
+      console.log("DB connected");
+})();
+
+//simple IIFE
+( () =>{
+     console.log("DB connected");
+})();
+
+//To prevent global pollution and immediately invoke function we make use of IIFE
+
+( (name) =>{
+    console.log(`Hello ${name}`);
+})("Ayesha");
