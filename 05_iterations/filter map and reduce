@@ -1,0 +1,34 @@
+const coding=["js","ruby","java","python","cpp"];
+
+const values= coding.forEach((item)=>{
+    console.log(item); //all values
+    return item;
+})
+
+console.log(values); //undefined, foreach does not return array values
+
+//filter, it returns array values
+
+const myNums= [1,2,3,4,5,6,7,8,9,10];
+
+const newNums= myNums.filter((num) => num>4);
+console.log(newNums);
+
+const newNums2= myNums.filter((num1)=> {
+    return num1>4;
+})
+
+console.log(newNums2);
+
+const myNumbers=[1,2,3,4,5,6,7,8,9,10];
+
+const newNums3=myNumbers.map((num)=> num+10);
+console.log(newNums3);
+
+const newNums4= myNumbers
+.map((num)=> num*10)
+.map((num)=>num+1)
+.filter((num)=> num>40);
+
+console.log(newNums4);
+            

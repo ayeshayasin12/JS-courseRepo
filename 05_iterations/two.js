@@ -1,0 +1,31 @@
+const myNums= [1,2,3];
+
+const myTotal= myNums.reduce(function(acc,currVal){
+      console.log(`acc: ${acc} and current Value: ${currVal}`);
+      return acc+currVal;
+},0)
+
+console.log(myTotal);
+
+const myTotal1= myNums.reduce((arr,currVal)=>arr+currVal,0);
+
+console.log(myTotal1);
+
+const shoppingCart=[
+    {
+        itemName: "py course",
+        price: 5999
+    },
+    {
+        itemName: "mobile dev course",
+        price: 4999
+    },
+    {
+        itemName: "data science course",
+        price: 12999
+    }
+   
+]
+
+const priceToPay= shoppingCart.reduce((acc,item)=>acc+item.price,0);
+console.log(priceToPay);
